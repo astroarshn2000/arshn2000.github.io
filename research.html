@@ -12,13 +12,13 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
+	<body class="landing is-preload">
 
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
 
 				<!-- Header -->
-					<header id="header">
+					<header id="header" class="alt">
 						<h1><a href="index.html">Arsh Nadkarni</a></h1>
 						<nav id="nav">
 							<ul>
@@ -27,8 +27,9 @@
 									<div id="menu">
 										<ul>
 											<li><a href="index.html">Home</a></li>
-											<li><a href="work.html">Work</a></li>
+											<li><a href="research.html">Research</a></li>
 											<li><a href="outreach.html">Outreach</a></li>
+											<li><a href="astrophotography.html">Astrophotography</a></li>
 										</ul>
 									</div>
 								</li>
@@ -45,13 +46,34 @@
 						</header>
 						<section class="wrapper style5">
 							<div class="inner">
-
 								<h3>Assessing the Performance of NASA/ESA JWST Image Simulator - PhoSim-NIRCam</h3>
-								<p>PhoSim-NIRCam is a full end-to-end JWST/NIRCam image simulator built on the framework of the LSST image simulator PhoSim. It contains a comprehensive physical model of the JWST telescope + NIRCam, and simulates photons propagating through the whole system using a Monte Carlo approach.  PhoSim-NIRCam is easy to use, allowing the user to start creating realistic NIRCam images with minimal preparation.  It also provides a variety of advanced features that allow direct control of any element in the system.</p>
-                                                                <p>Although developed primarily for LSST, PhoSim itself is a physics-based code that can simulatie any optical/IR observing system when used with appropriately constructed configuration files. PhoSim-NIRCam has been developed by taking advantage of this feature, and is essentially PhoSim that comes with a particular set of configuration files constructed for JWST + NIRCam. Despite its complex inner working, PhoSim-NIRCam is easy to use, and is typically run as a one-line command with a CatalogFile and a CommandsFile.</p>
-						                <p></p>
-
-								<hr />
+								<p> JWST (James Webb Space Telescope) is the next large space telescope that will be launched by NASA and ESA (European Space Agency) in 2021. As a preparation, our group has been developing an image simulator for JWST's NIRCam (Near-Infrared Camera), which was built under the leadership of University of Arizona (PI: Dr. Marcia Rieke). PhoSim-NIRCam is a full end-to-end JWST/NIRCam image simulator built on the framework of the LSST (Large Survey Synoptic Telescope) image simulator PhoSim. It contains a comprehensive physical model of the JWST telescope + NIRCam, and simulates photons propagating through the whole system using a Monte Carlo approach. PhoSim-NIRCam is easy to use, allowing the user to start creating realistic NIRCam images with minimal preparation. It also provides a variety of advanced features that allow direct control of any element in the system, which is fruitful in diagnosing real-time data, helping to identify the origin of any unexpected features and characteristics that may appear in the real system. The current phase involves assessing the performance of this image simulator (called PhoSim-NIRCam) and ensuring that the images it produces are reliable and realistic. It also includes simulating some real sky areas like the Large Magellanic Cloud, that will be observed as part of the NIRCam in-orbit commissioning.</p>
+                                                        <div class="container">
+								<div class="row">
+									<div class="col-lg-12 text-center">
+										<h2>My First JWST/NIRCam Images Simulated by PhoSim-NIRCam</h2>
+										<p>The CANDELS GOODS-S F160W source catalog was used with PhoSim-NIRCam to create these images (a flat-fnu SED was assumed). Substantial Poisson Noise was added using Python to display background noise. &nbsp;In this simulation, the NIRCam images do not necessarily look deeper than the CANDELS HST/F160W image because the former only contain sources that are seen in the latter. </p>
+									</div>
+									<div class="row">
+										<div class="col-md-6 text-center">
+											<img src="images/CANDELS_F200W.png" alt="" class="img-responsive">
+											<h4>JWST/NIRCam SW F200W Image </h4>
+											<h6>Total integration time: 10 minutes (600 sec); &nbsp;Sky background: 0.1 MJy/sr.</h6>
+										</div>
+										<div class="col-md-6 text-center">
+											<img src="images/CANDELS_F356W.png" alt="" class="img-responsive">
+											<h4>JWST/NIRCam LW F356W Image</h4>
+											<h6>Total integration time: 10 minutes (600 sec); &nbsp;Sky background: 0.1 MJy/sr.</h6>
+										</div>
+									</div>
+									<hr>
+									<div class="row">
+										<div class="col-md-6 text-center">
+											<img src="images/WFC3_F160W.png" alt="" class="img-responsive">
+											<h4>HST/WFC3-IR F160W Image</h4>
+											<h6>The publicly available CANDELS image, which was used as the truth image for this simulation.</h6>
+										</div>		
+										<hr />
 
 								<h4>Feugiat aliquam</h4>
 								<p>Nam sapien ante, varius in pulvinar vitae, rhoncus id massa. Donec varius ex in mauris ornare, eget euismod urna egestas. Etiam lacinia tempor ipsum, sodales porttitor justo. Aliquam dolor quam, semper in tortor eu, volutpat efficitur quam. Fusce nec fermentum nisl. Aenean erat diam, tempus aliquet erat.</p>
